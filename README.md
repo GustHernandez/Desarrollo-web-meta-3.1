@@ -38,9 +38,9 @@ Capturas de pantalla de las pruebas en Postman
 
 ![Prueba en Thunder Client usando PATCH](images/PATCH-api-tareas-1.png)
 
-![Prueba en Thunder Client usando GET](images/PUT-api-tareas-buscar.png)
+![Prueba en Thunder Client usando GET](images\GET-api-tareas-buscar.png)
 
-![Prueba en Thunder Client usando GET](images/PUT-api-tareas-formato-text.png)
+![Prueba en Thunder Client usando GET](images\GET-api-tareas-formato-text.png)
 
 
 
