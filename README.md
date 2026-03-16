@@ -30,17 +30,17 @@ Lista de endpoints disponibles
 | GET    | `/api/tareas/buscar?q=texto`| Buscar tareas por titulo |                                                      | 
 
 Capturas de pantalla de las pruebas en Postman
-![Prueba en Thunder Client usando GET](images\GET-api-tareas.png)
+![Prueba en Thunder Client usando GET](images/GET-api-tareas.png)
 
-![Prueba en Thunder Client usando POST](images\POST-api-tareas.png)
+![Prueba en Thunder Client usando POST](images/POST-api-tareas.png)
 
 ![Prueba en Thunder Client usando PUT](images/PUT-api-tareas-1.png)
 
 ![Prueba en Thunder Client usando PATCH](images/PATCH-api-tareas-1.png)
 
-![Prueba en Thunder Client usando GET](images\GET-api-tareas-buscar.png)
+![Prueba en Thunder Client usando GET](images/GET-api-tareas-buscar.png)
 
-![Prueba en Thunder Client usando GET](images\GET-api-tareas-formato-text.png)
+![Prueba en Thunder Client usando GET](images/GET-api-tareas-formato-text.png)
 
 
 
