@@ -1,0 +1,137 @@
+{
+  "info": {
+    "name": "API Tareas",
+    "_postman_id": "b1c2d3e4-fake-id-1234",
+    "description": "Colección de pruebas para la API REST de tareas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todas las tareas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/tareas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas"]
+        }
+      }
+    },
+    {
+      "name": "Obtener tarea por ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/tareas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas", "1"]
+        }
+      }
+    },
+    {
+      "name": "Crear nueva tarea",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Nueva tarea\",\n  \"completada\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tareas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas"]
+        }
+      }
+    },
+    {
+      "name": "Actualizar completamente una tarea (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Tarea actualizada\",\n  \"completada\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tareas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas", "1"]
+        }
+      }
+    },
+    {
+      "name": "Actualizar parcialmente una tarea (PATCH)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"completada\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tareas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas", "1"]
+        }
+      }
+    },
+    {
+      "name": "Eliminar tarea",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/api/tareas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas", "1"]
+        }
+      }
+    },
+    {
+      "name": "Buscar tareas por título",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/tareas/buscar?q=texto",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "tareas", "buscar"],
+          "query": [
+            {
+              "key": "q",
+              "value": "texto"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
